@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සුහුරු ඉගෙනුමට අත්වැලක්</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e0f7fa; /* Light blue background */
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        /* Updated header styles */
+        .tm-site-header {
+            background: linear-gradient(135deg, #0277bd 0%, #01579b 100%); /* Dark blue gradient */
+            padding: 20px 0;
+            border-bottom: 4px solid #0288d1; /* Light blue border */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tm-logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-decoration: none;
+            padding-left: 20px;
+        }
+
+        .tm-site-logo {
+            font-size: 40px;
+            color: #fff;
+        }
+
+        .tm-site-name {
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            margin-left: 15px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        /* Navbar styles */
+        .tm-site-nav .navbar-nav .nav-link {
+            font-size: 18px;
+            color: #fff;
+            padding: 05px 08px;
+            background-color: #0288d1; /* Light blue button */
+            border-radius: 8px;
+            margin-right: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .tm-site-nav .navbar-nav .nav-link:hover {
+            background-color: #039be5; /* Lighter blue on hover */
+        }
+
+        .tm-site-nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Welcome section */
+        .tm-welcome-container {
+            background-color: #01579b; /* Dark blue section */
+            padding: 3px 01px;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+        }
+
+        /* Professional highlighted heading */
+        .tm-welcome-text {
+            font-size: 45px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            color: #f3f3f3; /* Light blue heading */
+            letter-spacing: 1px;
+        }
+
+        .tm-video-description-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        /* Updated h2 styling for cleaner appearance */
+        .tm-video-title {
+            font-size: 24px; /* Smaller h2 size */
+            color: #01579b; /* Dark blue text */
+            margin: 10px 0 15px; /* Added top margin for space */
+        }
+
+        .tm-next-video-box {
+            background-color: #e1f5fe; /* Very light blue box */
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .tm-next-video-link {
+            font-size: 18px;
+            text-decoration: none;
+            color: #01579b;
+        }
+
+        .tm-next-video-link i {
+            margin-right: 8px;
+        }
+
+        video {
+            border-radius: 20px;
+        }
+        .tm-video-description-box, .tm-next-video-box {
+            margin-bottom: 1px; /* Remove unnecessary bottom margin */
+            padding-bottom: 1px; /* Remove unnecessary bottom padding */
+        }
+
+        .row.mb-5.pb-5 {
+            margin-bottom: 3rem; /* Reduce bottom margin to create less space */
+            padding-bottom: 3rem; /* Reduce padding if it's unnecessary */
+        }
+        
+        @media screen and (max-width: 768px) {
+            ul.navbar-nav.navbar-nav-tab {
+                flex-direction: row !important;
+            }
+
+            .tm-site-name {
+                font-size: 22px;
+            }
+
+            video, iframe {
+                width: 100%;
+                height: 350px;
+            }
+
+            .tm-welcome-text {
+                font-size: 32px;
+            }
+        }
+
+        @media screen and (max-width: 567px) {
+            video, iframe {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+	<div class="tm-page-wrap mx-auto">
+		<!-- Header -->
+		<div class="tm-site-header">
+			<div class="container-fluid position-relative">
+				<div class="row">						
+                    <div class="col-6">
+                        <!-- Home Icon on the left -->
+                        <a href="index.html" class="tm-logo-container">
+                            <i class="fas fa-home tm-site-logo"></i>
+                            <h1 class="tm-site-name">සුහුරු ඉගෙනුමට අත්වැලක්</h1>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <!-- Navigation on the right -->
+                        <div class="tm-site-nav">
+                            <nav class="navbar navbar-expand-lg">
+                                <ul class="navbar-nav navbar-nav-tab">
+                                    <li class="nav-item">
+                                        <a class="nav-link tm-nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Welcome section -->
+		<div class="tm-welcome-container">
+			<p class="tm-welcome-text">අප අවට සත්තු</p> <!-- Highlighted heading -->
+		</div>
+
+		<!-- Page content -->
+		<div class="container">
+			<div class="mx-auto tm-content-container">
+				<main>
+					<!-- Video section -->
+					<div class="mt-5 mb-5 pb-4">
+						<div class="col-12 text-center">
+							<iframe src="https://drive.google.com/file/d/1e756o27k0PwC4GPUqn1fhlU4TsDnROKA/preview" width="600" height="350"  allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay *; fullscreen *"></iframe>
+						</div>
+					</div>
+					<!-- Description and Next Video -->
+					<div class="row mb-3 pb-3">
+						<div class="col-xl-8 col-lg-7">
+							<div class="tm-video-description-box">
+								<h2 class="tm-video-title">අප අවට සත්තු</h2> <!-- Cleaned up heading -->
+								<p>අපට ආසන්න පරිසරවල ජීවත් වන සතුන් පිළිබඳව හැදෑරීමට මෙම තේමාවෙන් අවධානය යොමුකර ඇති අතර,  සතුන්ගේ සුවිශේෂී ලක්ෂණ, ප්‍රයෝජන, සතුන් ආරක්ෂා කිරීම හා සතුන්ගෙන් ආරක්ෂා වීම ගැන සාකච්ඡා කෙරේ</p>
+							</div>
+						</div>
+
+						<div class="col-xl-4 col-lg-5">
+							<!-- Next Video box -->
+							<div class="tm-next-video-box">
+								<h6 class="tm-next-video-title">ඊළඟ වීඩියෝව</h6>
+								<a href="tab5.html" class="tm-next-video-link">
+									<i class="fas fa-play-circle"></i>අප පරිහරණය කරන දේ
+								</a>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
